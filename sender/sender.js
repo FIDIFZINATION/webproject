@@ -1,4 +1,4 @@
-const webSocket = new WebSocket("ws://SERVER-IP-HERE:3000")
+const webSocket = new WebSocket("ws://192.168.0.105:3000")
 
 webSocket.onmessage = (event) => {
     handleSignallingData(JSON.parse(event.data))
@@ -36,13 +36,7 @@ function startCall() {
     .style.display = "inline"
 
     navigator.getUserMedia({
-        video: {
-            frameRate: 24,
-            width: {
-                min: 480, ideal: 720, max: 1280
-            },
-            aspectRatio: 1.33333
-        },
+        video: true,
         audio: true
     }, (stream) => {
         localStream = stream

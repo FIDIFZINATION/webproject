@@ -1,3 +1,8 @@
+body{
+    background-color: green;
+}
+
+
 #video-call-div {
     position: absolute;
     top: 0;

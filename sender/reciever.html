@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+     <link rel="stylesheet" href="../style.css">
+    <title></title>
+  </head>
+  <body>
+  
+    <div>
+    
+    <input type="text" id="username-input" value=""><br>
+    <button onclick="sendUserName()" type="button" name="button">Send</button>
+    <button onclick="joinCall()" type="button" name="button">Join call</button>
+    
+    </div>
+    
+    <div  id="video-call-div">
+    
+    <video id="local-video" autoplay></video>
+    <video id="remote-video" autoplay></video>
+    
+    
+    
+    <div class="call-action-div">
+    
+    <button onclick="muteVideo()">Mute Video</button>
+    <button onclick="muteAudio()">Mute Audio</button>
+    
+    </div>
+    </div>
+    
+  </body>
+  <script src="sender.js"></script>
+</html>
